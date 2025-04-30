@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+            <title>Online Tone Generator 2.0 - Generate and save tuning notes for your cello.</title>
+        
+        <meta name="viewport" content="initial-scale=1">
+
+        
+
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+
+        <link href="../css/3/main.css" rel="stylesheet" type="text/css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+    	<div id="wrapper"  class='wide'  >
+
+
+
+        <div id="navMenu">
+            <ul id="nav" class=''>
+        <li><a href="cello.html#" class="js-menu-toggle">&#9776; Show menu</a></li>
+        
+            <li class=" ">
+                <a class="" href="../index.html">Home </a>
+            </li>
+            <li class=" ">
+                <a class="" href="../pitch-shifter.html">Pitch Shifter </a>
+            </li>
+            <li class=" ">
+                <a class="" href="../time-stretcher.html">Time Stretcher </a>
+            </li>
+            <li class=" ">
+                <a class="" href="../voice-generator.html">Voice Generator </a>
+            </li>
+            <li class=" ">
+                <a class="" href="../frequency-sweep-generator.html">Sweep Generator </a>
+            </li>
+            <li class=" ">
+                <a class="" href="../tuning.html">Instrument Tuning </a>
+            </li>
+            <li class=" ">
+                <a class="" href="../subwoofer.html">Subwoofer Testing </a>
+            </li>
+            <li class=" ">
+                <a class="" href="../hearingtest.html">Hearing Test </a>
+            </li>
+            <li class=" ">
+                <a class="" href="../noise.html">Noise Generator </a>
+            </li>
+            <li class=" ">
+                <a class="" href="../binauralbeats.html">Binaural Beats </a>
+            </li>
+            <li class=" ">
+                <a class="" href="../432Hz.html">432Hz Frequency </a>
+            </li>
+            <li class=" ">
+                <a class="" href="../dtmf.html">DTMF Signals </a>
+            </li>
+            <li class=" ">
+                <a class="" href="../pips.html">The Pips </a>
+            </li>
+            <li class=" ">
+                <a class="" href="../theory.html">Acoustic Theory </a>
+            </li>
+            <li class=" last">
+                <a class="" href="../about.html">About </a>
+            </li>
+        
+
+</ul>
+
+
+    
+<script>
+
+ 
+
+    $(".js-menu-toggle").click(function(e){
+        e.preventDefault();
+        $nav = $(this).parents("#nav");
+        if ($nav.hasClass("js-open")){
+            // $nav.height($(this).outerHeight());
+            $(this).html("&#9776; Show menu");
+        } else {
+            // $nav.height("auto");
+            $(this).html("&#9776; Close menu");
+        }
+        $nav.toggleClass("js-open");
+    });
+</script>
+        </div>
+
+    		<div id="mainContent">
+
+          <h1><a href='../index.html'><!-- <img src="/img/Speaker_Icon-tilted.png" alt=""> -->Online Tone Generator 2.0 </a></h1>
+          <p class="tagline"><strong>Generate and save tuning notes for your cello.</strong></p>
+
+		  <div id="tuningNotes">
+
+
+<div id="option1">
+
+    <table class="tuningTable">
+       <tr>
+            <td class="noteName">C: 65.4064Hz</td>
+               <td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(65.4064)">play</button></td>
+               <td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+               <td class="download"><button class="tuningButton downloadButton" onclick="location.href='../_downloads/cello/65.406.wav'" >download</button></td><td></td>
+           </tr>
+        <tr>
+            <td class="noteName">G: 97.9989Hz</td>
+               <td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(97.9989)">play</button></td>
+               <td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+               <td class="download"><button class="tuningButton downloadButton" onclick="location.href='../_downloads/bass/97.999.wav'" >download</button></td><td></td>
+           </tr>
+           <tr>
+            <td class="noteName">D: 146.832Hz</td>
+               <td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(146.832)">play</button></td>
+               <td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+               <td class="download"><button class="tuningButton downloadButton" onclick="location.href='../_downloads/guitar/146.832.wav'" >download</button></td><td></td>
+           </tr>
+           <tr>
+            <td class="noteName">A:  220.000Hz</td>
+               <td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(220.000)">play</button></td>
+               <td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+               <td class="download"><button class="tuningButton downloadButton" onclick="location.href='../_downloads/cello/220.000.wav'" >download</button></td><td></td>
+           </tr>
+           <tr>
+            <td colspan="5"><a class="zip" href="../_downloads/cello/cello_standard_tuning.zip">Click here to download all cello tuning notes.</a></td>
+           </tr>
+
+    </table>
+
+</div>
+
+
+</div>
+
+        </div>
+
+
+
+
+
+         
+
+        <p style="clear:both"></p>
+
+      </div>
+
+        
+        <script src='../js/tonegenerator.js'></script>
+        
+        <script>
+
+
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      if (window.location.host != 'localhost:4000') {
+          ga('create', 'UA-17960919-2', 'onlinetonegenerator.github.io');
+          ga('send', 'pageview');
+
+          window.onerror = function(message, file, line){
+            ga('send', 'event', 'JavaScript Error', message, file + ": Line "+ line, { 'nonInteraction': 1 });
+          }
+
+        }
+
+        </script>
+
+    </body>
+</html>

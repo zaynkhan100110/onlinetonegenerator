@@ -1,0 +1,604 @@
+
+<!DOCTYPE html>
+<html lang="en">
+                    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+            <title>Online Tone Generator 2.0- Generate and save tuning notes for your guitar, bass, ukulele and more.</title>
+        
+        <meta name="viewport" content="initial-scale=1">
+
+                    <script async src="https://cdn.fuseplatform.net/publift/tags/2/3547/fuse.js"></script>
+        
+
+
+        
+
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+        
+        
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8TTZXQT2S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z8TTZXQT2S');
+</script>
+
+
+<style>
+    /* Styles for publift */
+
+    body {
+        margin-bottom:100px;
+
+    }
+
+    #wrapper {
+        max-width: 1100px;
+    }
+
+    
+        @media only screen and (max-width: 1868px) {
+            .fuse-sidebar {
+                width:160px!important;
+            }
+        }
+        @media only screen and (max-width: 1700px) {
+            .fuse-sidebar {
+                width:160px!important;
+            }
+
+            #wrapper {
+                max-width: 1000px;
+            }
+
+        }
+
+        @media only screen and (max-width: 1423px) {
+            #wrapper {
+                max-width: 1100px;
+            }
+            .fuse-sidebar {
+                display:none!important;
+            }
+        }
+
+
+</style>
+
+
+
+    </head>
+
+    <body class="">
+        
+        <div class="site-outer-wrapper" style="max-width: 1900px;margin: 0 auto;text-align:center;">
+                        <div class="fuse-sidebar" style="width:200px;float:left;width: 300px;position: sticky;top:20px;margin:20px;display:inline-block;">
+
+                <div data-fuse="23080447251"></div>
+            </div>
+                    <div id="wrapper" style="display: inline-block;text-align:left;">
+
+        <div id="navMenu">
+            <ul id="nav" class=''>
+        <li><a href="tuning.html#" class="js-menu-toggle">&#9776; Show menu</a></li>
+        
+            <li>
+                <a class="" href="index.html">Home </a>
+            </li>
+            <li>
+                <a class="" href="multiple-tone-generator.html">Multiple Tone Generator </a>
+            </li>
+            <li>
+                <a class="" href="pitch-shifter.html">Pitch Shifter </a>
+            </li>
+            <li>
+                <a class="" href="time-stretcher.html">Time Stretcher </a>
+            </li>
+            <li>
+                <a class="" href="voice-generator.html">Voice Generator </a>
+            </li>
+            <li>
+                <a class="" href="voice-recorder.html">Voice Recorder <span class="new">NEW</span></a>
+            </li>
+            <li>
+                <a class="" href="frequency-sweep-generator.html">Sweep Generator </a>
+            </li>
+            <li>
+                <a class="current" href="tuning.html">Instrument Tuning </a>
+            </li>
+            <li>
+                <a class="" href="subwoofer.html">Subwoofer Testing </a>
+            </li>
+            <li>
+                <a class="" href="hearingtest.html">Hearing Test </a>
+            </li>
+            <li>
+                <a class="" href="noise.html">Noise Generator </a>
+            </li>
+            <li>
+                <a class="" href="binauralbeats.html">Binaural Beats </a>
+            </li>
+            <li>
+                <a class="" href="432Hz.html">432Hz Frequency </a>
+            </li>
+            <li>
+                <a class="" href="dtmf.html">DTMF Signals </a>
+            </li>
+            <li>
+                <a class="" href="metronome.html">Metronome </a>
+            </li>
+            <li>
+                <a class="" href="pips.html">The Pips </a>
+            </li>
+            <li>
+                <a class="" href="theory.html">Acoustic Theory </a>
+            </li>
+            <li class="">
+                <a class="" href="shop.html">Shop <span class="new">NEW</span></a>
+            </li>
+            <li class="">
+                <a class="" href="about.html">About </a>
+            </li>
+            <li>
+                
+                <a target="_blank" rel="noreferrer" href="https://ko-fi.com/onlinetonegenerator" class="last">Support the developer <span style="font-family:sans-serif;">☕</span></a>
+            </li>
+        
+
+</ul>
+
+
+
+    
+<script>
+
+
+
+    $(".js-menu-toggle").click(function(e){
+        e.preventDefault();
+        $nav = $(this).parents("#nav");
+        if ($nav.hasClass("js-open")){
+            // $nav.height($(this).outerHeight());
+            $(this).html("&#9776; Show menu");
+        } else {
+            // $nav.height("auto");
+            $(this).html("&#9776; Close menu");
+        }
+        $nav.toggleClass("js-open");
+    });
+</script>
+        </div>
+
+        <div id="mainContent">
+
+          <h1><a href='index.html'><!-- <img src="/img/Speaker_Icon-tilted.png" alt=""> -->Online Tone Generator 2.0</a></h1>
+          <p class="tagline"><strong>Tuning notes for your guitar, bass, ukulele and more.</strong></p>
+
+		  <p>
+	This page lists a number of frequencies commonly found in musical instruments.
+	Simply press play to generate your tuning note. Please note that many speakers such
+	as those found in laptops may struggle to reproduce lower frequency tones, particularly
+	for Bass Guitar, for example. All the tuning notes on this page can be freely downloaded
+	as high quality 30 second WAV files (right click on the download button and choose "Save As...").
+</p>
+
+<p id="instrumentLinks">
+	<a href="tuning/guitar.html">Guitar</a>
+	&nbsp;|&nbsp;
+	<!-- <a href="/tuning/guitar-d-tuning.html">Guitar D-tuning</a> -->
+	<!-- &nbsp;|&nbsp; -->
+	<a href="tuning/bass.html">Bass</a>
+	&nbsp;|&nbsp;
+	<a href="tuning/uke.html">Ukulele</a>
+	&nbsp;|&nbsp;
+	<a href="tuning/banjo.html">Banjo</a>
+	&nbsp;|&nbsp;
+	<a href="tuning/violin.html">Violin</a>
+	&nbsp;|&nbsp;
+	<a href="tuning/viola.html">Viola</a>
+	&nbsp;|&nbsp;
+	<a href="tuning/cello.html">Cello</a>
+	&nbsp;|&nbsp;
+	<a href="tuning/charango.html">Charango</a>
+	&nbsp;|&nbsp;
+	<!-- <a href="/tuning/piano.html">Piano</a> -->
+	<!-- &nbsp;|&nbsp; -->
+	<a href="tuning/tenor-guitar.html">Tenor Guitar</a>
+	&nbsp;|&nbsp;
+	<a href="tuning/others.html">Others</a>
+</p>
+
+
+
+<div class="fuse-in-content" style="margin:20px 0;min-height: 250px;max-width:100%;">
+<!-- GAM 71161633/OLGEN_onlinetonegenerator/incontent_1 -->
+<div data-fuse="23080803961"></div>
+</div>
+<div id="tuningNotes">
+
+	Standard <strong>Concert Pitch</strong> in Europe is <strong>440Hz</strong>.<br /><br />
+	<strong>Middle C</strong> on a piano is at <strong>261.626Hz</strong>.<br /><br />
+
+
+	<!--GUITAR-->
+	<a class="fragment" name="guitar"></a>
+	<table class="tuningTable">
+		<tr>
+			<th colspan="5">Guitar</th>
+		</tr>
+		<tr>
+			<td colspan="4"></td>
+			<td class=backToTop><a class="fragment" href="tuning.html#top">Back to Top</a></td>
+		</tr>
+
+		<tr>
+			<td class="noteName">Low E: 82.407Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(82.407)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/guitar/82.407.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">A: 110.000Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(110.000)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/guitar/110.000.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">D: 146.832Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(146.832)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/guitar/146.832.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">G: 195.998Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(195.998)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/guitar/195.998.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">B: 246.942Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(246.942)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/guitar/246.942.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">High E: 329.628Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(329.628)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/guitar/329.628.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td colspan="5"><a class="zip" href="downloads/guitar/Guitar_Standard_Tuning.zip">Click here to download all guitar tuning notes.</a></td>
+		</tr>
+	</table>
+
+
+	<p>
+
+		<!--BASS-->
+		<a class="fragment" name="bass"></a>
+	</p>
+	<table class="tuningTable">
+		<tr>
+			<th colspan="5">Bass Guitar</th>
+		</tr>
+		<tr>
+			<td colspan="4"></td>
+			<td class=backToTop><a class="fragment" href="tuning.html#top">Back to Top</a></td>
+		</tr>
+
+		<tr>
+			<td class="noteName">E: 41.204Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(41.204)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/bass/41.204.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">A: 55.000Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(55.000)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/bass/55.000.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">D: 73.416Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(73.416)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/bass/73.416.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">G: 97.999Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(97.999)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/bass/97.999.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td colspan="5"><a class="zip" href="downloads/bass/bass_standard_tuning.zip">Click here to download all bass tuning notes.</a></td>
+		</tr>
+
+	</table>
+
+
+<div class="fuse-in-content" style="margin:20px 0;min-height: 250px;max-width: 100%;">
+<!-- GAM 71161633/OLGEN_onlinetonegenerator/incontent_2 -->
+<div data-fuse="23081403308"></div>
+</div>
+	<!--UKE-->
+	<a class="fragment" name="ukulele"></a>
+	<table class="tuningTable">
+		<tr>
+			<th colspan="5">Soprano/Concert Ukulele (High G Tuning)</th>
+		</tr>
+		<tr>
+			<td colspan="4"></td>
+			<td class=backToTop><a class="fragment" href="tuning.html#top">Back to Top</a></td>
+		</tr>
+
+		<tr>
+			<td class="noteName">G: 391.995Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(391.995)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/uke/391.995.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">C: 261.626Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(261.626)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/uke/261.626.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">E: 329.628Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(329.628)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/uke/329.628.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">A: 440.000Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(440.000)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/uke/440.000.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td colspan="5"><a class="zip" href="downloads/uke/ukulele_standard_tuning.zip">Click here to download all ukulele tuning notes.</a></td>
+		</tr>
+
+	</table>
+
+
+	<!--BANJO-->
+	<a class="fragment" name="banjo"></a>
+	<table class="tuningTable">
+		<tr>
+			<th colspan="5">5-String Banjo (G Tuning)</th>
+		</tr>
+		<tr>
+			<td colspan="4"></td>
+			<td class=backToTop><a class="fragment" href="tuning.html#top">Back to Top</a></td>
+		</tr>
+
+		<tr>
+			<td class="noteName">G: 391.995Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(391.995)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/uke/391.995.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">D: 146.832Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(146.832)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/guitar/146.832.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">G: 195.998Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(195.998)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/guitar/195.998.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">B: 246.942Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(246.942)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/guitar/246.942.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">D: 293.665Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(293.665)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/banjo/293.665.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td colspan="5"><a class="zip" href="downloads/banjo/banjo_g_tuning.zip">Click here to download all banjo tuning notes.</a></td>
+		</tr>
+	</table>
+
+	<div class="fuse-in-content" style="margin:20px 0;min-height: 250px;max-width: 100%;">
+<!-- GAM 71161633/OLGEN_onlinetonegenerator/incontent_3 -->
+<div data-fuse="23080447254"></div>
+</div>
+
+	<!--VIOLIN-->
+	<a class="fragment" name="violin"></a>
+	<table class="tuningTable">
+		<tr>
+			<th colspan="5">Violin</th>
+		</tr>
+		<tr>
+			<td colspan="4"></td>
+			<td class=backToTop><a class="fragment" href="tuning.html#top">Back to Top</a></td>
+		</tr>
+
+		<tr>
+			<td class="noteName">G: 195.998Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(195.998)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/guitar/195.998.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">D: 293.665Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(293.665)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/banjo/293.665.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">A: 440.000Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(440.000)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/uke/440.000.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">E: 659.255Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(659.255)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/violin/659.255.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td colspan="5"><a class="zip" href="downloads/violin/violin_standard_tuning.zip">Click here to download all violin tuning notes.</a></td>
+		</tr>
+	</table>
+
+	<!--VIOLA-->
+	<a class="fragment" name="viola"></a>
+	<table class="tuningTable">
+		<tr>
+			<th colspan="5">Viola</th>
+		</tr>
+		<tr>
+			<td colspan="4"></td>
+			<td class=backToTop><a class="fragment" href="tuning.html#top">Back to Top</a></td>
+		</tr>
+		<tr>
+			<td class="noteName">C: 130.813Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(130.813)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/viola/130.813.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">G: 195.998Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(195.998)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/guitar/195.998.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">D: 293.665Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(293.665)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/banjo/293.665.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">A: 440.000Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(440.000)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/uke/440.000.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td colspan="5"><a class="zip" href="downloads/viola/viola_standard_tuning.zip">Click here to download all viola tuning notes.</a></td>
+		</tr>
+
+	</table>
+
+	<!--CELLO-->
+	<a class="fragment" name="cello"></a>
+	<table class="tuningTable">
+		<tr>
+			<th colspan="5">Cello</th>
+		</tr>
+		<tr>
+			<td colspan="4"></td>
+			<td class=backToTop><a class="fragment" href="tuning.html#top">Back to Top</a></td>
+		</tr>
+		<tr>
+			<td class="noteName">C: 65.4064Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(65.4064)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/cello/65.406.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">G: 97.9989Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(97.9989)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/bass/97.999.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">D: 146.832Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(146.832)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/guitar/146.832.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td class="noteName">A:  220.000Hz</td>
+			<td class="notePlay"><button class="tuningButton beginTuning" onclick="startTuning(220.000)">play</button></td>
+			<td class="noteStop"><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+			<td class="download"><button class="tuningButton downloadButton" onclick="location.href='downloads/cello/220.000.wav'" >download</button></td><td></td>
+		</tr>
+		<tr>
+			<td colspan="5"><a class="zip" href="downloads/cello/cello_standard_tuning.zip">Click here to download all cello tuning notes.</a></td>
+		</tr>
+
+	</table>
+
+
+</div><!-- end of tuning notes-->
+
+
+        </div>
+
+
+
+
+
+        <div id="footer">
+            Online Tone Generator utilises HTML5 and the Web Audio API. It is optimized for use with the latest versions of Chrome, Safari, Firefox and Microsoft Edge.
+
+            <br />
+            &copy; onlinetonegenerator.github.io <a href="privacy-policy.html">Privacy Policy.</a>
+
+        </div>
+
+      </div><!-- End of main content wrapper -->
+
+
+            <div class="fuse-sidebar" style="display:inline-block;vertical-align:top;width: 300px;position: sticky;top:20px;margin:20px;">
+                <div data-fuse="23080803958"></div>
+            </div>
+      </div>
+        
+          
+
+        <p style="clear:both"></p>
+
+      </div>
+
+        
+        <script src='js/tonegenerator.js'></script>
+        
+        <script>
+
+
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      if (window.location.host != 'localhost:4000') {
+          ga('create', 'UA-17960919-2', 'onlinetonegenerator.github.io');
+          ga('send', 'pageview');
+
+          window.onerror = function(message, file, line){
+            ga('send', 'event', 'JavaScript Error', message, file + ": Line "+ line, { 'nonInteraction': 1 });
+          }
+
+        }
+
+        </script>
+
+    </body>
+</html>

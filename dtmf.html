@@ -1,0 +1,355 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+                    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+            <title>Online Tone Generator 2.0 - A free and simple way to generate DTMF dial tones.</title>
+        
+        <meta name="viewport" content="initial-scale=1">
+
+                    <script async src="https://cdn.fuseplatform.net/publift/tags/2/3547/fuse.js"></script>
+        
+
+
+        
+
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+        
+        
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8TTZXQT2S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z8TTZXQT2S');
+</script>
+
+
+<style>
+    /* Styles for publift */
+
+    body {
+        margin-bottom:100px;
+
+    }
+
+    #wrapper {
+        max-width: 1100px;
+    }
+
+    
+        @media only screen and (max-width: 1868px) {
+            .fuse-sidebar {
+                width:160px!important;
+            }
+        }
+        @media only screen and (max-width: 1700px) {
+            .fuse-sidebar {
+                width:160px!important;
+            }
+
+            #wrapper {
+                max-width: 1000px;
+            }
+
+        }
+
+        @media only screen and (max-width: 1423px) {
+            #wrapper {
+                max-width: 1100px;
+            }
+            .fuse-sidebar {
+                display:none!important;
+            }
+        }
+
+
+</style>
+
+
+
+    </head>
+
+    <body class="">
+        
+        <div class="site-outer-wrapper" style="max-width: 1900px;margin: 0 auto;text-align:center;">
+                        <div class="fuse-sidebar" style="width:200px;float:left;width: 300px;position: sticky;top:20px;margin:20px;display:inline-block;">
+
+                <div data-fuse="23080447251"></div>
+            </div>
+                    <div id="wrapper" style="display: inline-block;text-align:left;">
+
+        <div id="navMenu">
+            <ul id="nav" class=''>
+        <li><a href="dtmf.html#" class="js-menu-toggle">&#9776; Show menu</a></li>
+        
+            <li>
+                <a class="" href="index.html">Home </a>
+            </li>
+            <li>
+                <a class="" href="multiple-tone-generator.html">Multiple Tone Generator </a>
+            </li>
+            <li>
+                <a class="" href="pitch-shifter.html">Pitch Shifter </a>
+            </li>
+            <li>
+                <a class="" href="time-stretcher.html">Time Stretcher </a>
+            </li>
+            <li>
+                <a class="" href="voice-generator.html">Voice Generator </a>
+            </li>
+            <li>
+                <a class="" href="voice-recorder.html">Voice Recorder <span class="new">NEW</span></a>
+            </li>
+            <li>
+                <a class="" href="frequency-sweep-generator.html">Sweep Generator </a>
+            </li>
+            <li>
+                <a class="" href="tuning.html">Instrument Tuning </a>
+            </li>
+            <li>
+                <a class="" href="subwoofer.html">Subwoofer Testing </a>
+            </li>
+            <li>
+                <a class="" href="hearingtest.html">Hearing Test </a>
+            </li>
+            <li>
+                <a class="" href="noise.html">Noise Generator </a>
+            </li>
+            <li>
+                <a class="" href="binauralbeats.html">Binaural Beats </a>
+            </li>
+            <li>
+                <a class="" href="432Hz.html">432Hz Frequency </a>
+            </li>
+            <li>
+                <a class="current" href="dtmf.html">DTMF Signals </a>
+            </li>
+            <li>
+                <a class="" href="metronome.html">Metronome </a>
+            </li>
+            <li>
+                <a class="" href="pips.html">The Pips </a>
+            </li>
+            <li>
+                <a class="" href="theory.html">Acoustic Theory </a>
+            </li>
+            <li class="">
+                <a class="" href="shop.html">Shop <span class="new">NEW</span></a>
+            </li>
+            <li class="">
+                <a class="" href="about.html">About </a>
+            </li>
+            <li>
+                
+                <a target="_blank" rel="noreferrer" href="https://ko-fi.com/onlinetonegenerator" class="last">Support the developer<span style="font-family:sans-serif;">☕</span></a>
+            </li>
+        
+
+</ul>
+
+
+
+    
+<script>
+
+
+    $(".js-menu-toggle").click(function(e){
+        e.preventDefault();
+        $nav = $(this).parents("#nav");
+        if ($nav.hasClass("js-open")){
+            // $nav.height($(this).outerHeight());
+            $(this).html("&#9776; Show menu");
+        } else {
+            // $nav.height("auto");
+            $(this).html("&#9776; Close menu");
+        }
+        $nav.toggleClass("js-open");
+    });
+</script>
+        </div>
+
+        <div id="mainContent">
+
+          <h1><a href='index.html'><!-- <img src="/img/Speaker_Icon-tilted.png" alt=""> -->Online Tone Generator 2.0</a></h1>
+          <p class="tagline"><strong>DTMF Dial Tones</strong></p>
+
+		  <script src='js/DTMFgenerator.js'></script>
+
+		<p id="info">
+		The Online Tone Generator can be used to create Dual Tone Multi Frequency (DTMF) signals commonly heard on telephone dial pads.
+        Each tone is simply the sum of two sine waves. Click and hold the dial pad buttons to hear each tone.
+        <!-- Each country uses slightly different frequencies; the ones on this page are from the UK. --><!-- See .S. Brown, ``A new method of tone identification'', Post Office Electrical Engineers' Journal 71(2) 117-121 (1978) for more details.http://www-users.cs.york.ac.uk/~fisher/telecom/tones/-->
+		</p>
+
+ <div class="fuse-in-content" style="margin:20px 0;min-height: 250px;max-width:100%;">
+<!-- GAM 71161633/OLGEN_onlinetonegenerator/incontent_1 -->
+<div data-fuse="23080803961"></div>
+</div>   
+
+
+		<div id="tuningNotes">
+
+    <!--<script src=tonegeneratorbeep.js>
+	</script>-->
+
+
+<table class="dialpad">
+	<tr>
+    	<td></td>
+    	<td>1209Hz</td>
+        <td>1336Hz</td>
+        <td>1477Hz</td>
+        <td>1633Hz</td>
+    </tr>
+	<tr>
+    	<td>697Hz</td>
+    	<td><button id="one" class="beginDial" onmousedown="dialTone(697.0, 1209.0)"  onmouseup="stop()" data-freq='697.0, 1209.0'>1</button></td>
+        <td><button id="two" class="beginDial" onmousedown="dialTone(697.0, 1336.0)" onmouseup="stop()" data-freq='697.0, 1336.0'>2</button></td>
+        <td><button id="three" class="beginDial" onmousedown="dialTone(697.0, 1477.0)" onmouseup="stop()" data-freq='697.0, 1477.0'>3</button></td>
+        <td><button id="dtmf-a" class="beginDial" onmousedown="dialTone(697.0, 1633.0)" onmouseup="stop()" data-freq='697.0, 1633.0'>A</button></td>
+    </tr>
+    <tr>
+    	<td>770Hz</td>
+    	<td><button id="four" class="beginDial" onmousedown="dialTone(770.0, 1209.0)" onmouseup="stop()" data-freq='770.0, 1209.0'>4</button></td>
+        <td><button id="five" class="beginDial" onmousedown="dialTone(770.0, 1336.0)" onmouseup="stop()" data-freq='770.0, 1336.0'>5</button></td>
+        <td><button id="six" class="beginDial" onmousedown="dialTone(770.0, 1477.0)" onmouseup="stop()" data-freq='770.0, 1477.0'>6</button></td>
+        <td><button id="dtmf-b" class="beginDial" onmousedown="dialTone(770.0, 1633.0)" onmouseup="stop()" data-freq='770.0, 1633.0'>B</button></td>
+    </tr>
+	<tr>
+    	<td>852Hz</td>
+    	<td><button id="seven" class="beginDial" onmousedown="dialTone(852.0, 1209.0)" onmouseup="stop()" data-freq='852.0, 1209.0'>7</button></td>
+        <td><button id="eight" class="beginDial" onmousedown="dialTone(852.0, 1336.0)" onmouseup="stop()" data-freq='852.0, 1336.0'>8</button></td>
+        <td><button id="nine" class="beginDial" onmousedown="dialTone(852.0, 1477.0)" onmouseup="stop()" data-freq='852.0, 1477.0'>9</button></td>
+        <td><button id="dtmf-c" class="beginDial" onmousedown="dialTone(852.0, 1633.0)" onmouseup="stop()" data-freq='852.0, 1633.0'>C</button></td>
+
+    </tr>
+	<tr>
+    	<td>941Hz</td>
+    	<td><button class="beginDial" onmousedown="dialTone(941.0, 1209.0)" onmouseup="stop()" data-freq='941.0, 1209.0'>*</button></td>
+        <td><button id="zero" class="beginDial" onmousedown="dialTone(941.0, 1336.0)" onmouseup="stop()" data-freq='941.0, 1336.0'>0</button></td>
+        <td><button class="beginDial" onmousedown="dialTone(941.0, 1477.0)" onmouseup="stop()" data-freq='941.0, 1477.0'>#</button></td>
+        <td><button id="dtmf-d" class="beginDial" onmousedown="dialTone(941.0, 1633.0)" onmouseup="stop()" data-freq='941.0, 1633.0'>D</button></td>
+
+    </tr>
+</table>
+
+<div class="fuse-in-content" style="margin:20px 0;min-height: 250px;max-width: 100%;">
+<!-- GAM 71161633/OLGEN_onlinetonegenerator/incontent_2 -->
+<div data-fuse="23081403308"></div>
+</div>
+<script type="text/javascript">
+
+$('.dialpad button').on("touchstart", function(e){
+    e.preventDefault();
+    freqs = $(this).data("freq").split(",");
+    dialTone(parseInt(freqs[0]), parseInt(freqs[1]));
+});
+
+
+$('.dialpad').on("touchend", function(e){
+    e.preventDefault();
+    stop();
+});
+
+$('.dialpad').on("mouseup", function(e){
+    // e.preventDefault();
+    stop();
+});
+
+</script>
+
+<table>
+	<tr style="padding-bottom:40px;">
+    	<td><strong>Dial Tone</strong><br />
+   	  350Hz and 450Hz</td>
+        <td><button class="tuningButton beginTuning" onclick="dialTone(350.0, 450.0)" onmouseup="stop()">play</button></td>
+        <td><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+    </tr>
+	<tr>
+    	<td><strong>Ringing Tone</strong><br />
+   	  400Hz and 450Hz <br />(On for 400ms, off for 200ms, <br />on for 400ms, off for 2000ms)</td>
+        <td><button class="tuningButton beginTuning" onclick="dialToneBeep(400,450)">play</button></td>
+        <td><button class="tuningButton stopTuning" onclick="stop()">stop</button></td>
+    </tr>
+    <tr><td><br /><br /></td></tr>
+    <tr>
+    	<td><strong>Busy Tone</strong> <br/> 400Hz <br />(On for 350ms, off for 350ms)</td>
+        <td><button class="tuningButton beginTuning" onclick="doTimer_b()">play</button></td>
+        <td><button class="tuningButton stopTuning" onclick="stopCount_b()">stop</button></td>
+    </tr>
+    <tr><td><br /><br /></td></tr>
+    <tr>
+    	<td><strong>Number Not Recognised Tone</strong> <br/> 950Hz then 1400Hz then 1800Hz <br />(Each last 330ms with a 15ms<br /> pause between each tone)</td>
+        <td><button class="tuningButton beginTuning" onclick="doTimer()">play</button></td>
+        <td><button class="tuningButton stopTuning" onclick="stopCount()">stop</button></td>
+    </tr>
+
+
+</table>
+
+</div>
+
+
+        </div>
+
+
+
+
+
+        <div id="footer">
+            Online Tone Generator utilises HTML5 and the Web Audio API. It is optimized for use with the latest versions of Chrome, Safari, Firefox and Microsoft Edge.
+
+            <br />
+            &copy;   onlinetonegenerator.github.io <a href="privacy-policy.html">Privacy Policy.</a>
+
+        </div>
+
+      </div><!-- End of main content wrapper -->
+
+
+            <div class="fuse-sidebar" style="display:inline-block;vertical-align:top;width: 300px;position: sticky;top:20px;margin:20px;">
+                <div data-fuse="23080803958"></div>
+            </div>
+      </div>
+        
+          
+
+
+        <p style="clear:both"></p>
+
+      </div>
+
+        
+        <script>
+
+
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      if (window.location.host != 'localhost:4000') {
+          ga('create', 'UA-17960919-2', 'onlinetonegenerator.github.io');
+          ga('send', 'pageview');
+
+          window.onerror = function(message, file, line){
+            ga('send', 'event', 'JavaScript Error', message, file + ": Line "+ line, { 'nonInteraction': 1 });
+          }
+
+        }
+
+        </script>
+
+    </body>
+</html>
